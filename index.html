@@ -876,6 +876,69 @@ img {
   window.addEventListener('orientationchange', scheduleFit);
   if ('ResizeObserver' in window) { var ro = new ResizeObserver(scheduleFit); window.addEventListener('load', function(){ var h=document.querySelector('.hero'); if(h) ro.observe(h); }); }
 })();
+
+/* Restore clickable full-size logo modal and close control */
+const logoBox = document.getElementById("logoBox");
+const logoModal = document.getElementById("logoModal");
+const logoFull = document.getElementById("logoFull");
+const logoClose = document.getElementById("logoClose");
+let logoHistoryEntryActive = false;
+
+function openLogo(){
+  const logo = logoBox.querySelector("img");
+  logoFull.src = logo.src;
+  logoModal.classList.add("show");
+  logoModal.setAttribute("aria-hidden","false");
+  document.body.style.overflow = "hidden";
+  /* Add a browser-history entry so the phone Back button closes the logo first. */
+  if (!logoHistoryEntryActive) {
+    history.pushState({ logoZoomOpen: true }, "", location.href);
+    logoHistoryEntryActive = true;
+  }
+}
+
+function closeLogo(fromBrowserBack = false){
+  if (!logoModal.classList.contains("show")) return;
+  logoModal.classList.remove("show");
+  logoModal.setAttribute("aria-hidden","true");
+  document.body.style.overflow = "";
+  if (logoHistoryEntryActive) {
+    logoHistoryEntryActive = false;
+    /* The ×/overlay/Escape should also remove the temporary history entry. */
+    if (!fromBrowserBack) history.back();
+  }
+}
+
+window.addEventListener("popstate", function(){
+  if (logoModal.classList.contains("show")) {
+    closeLogo(true);
+  }
+});
+
+logoBox.addEventListener("click", openLogo);
+logoBox.addEventListener("keydown", function(e){
+  if(e.key === "Enter" || e.key === " "){
+    e.preventDefault();
+    openLogo();
+  }
+});
+
+logoClose.addEventListener("click", closeLogo);
+
+logoModal.addEventListener("click", function(e){
+  if(e.target === logoModal){
+    closeLogo();
+  }
+});
+
+document.addEventListener("keydown", function(e){
+  if(e.key === "Escape" && logoModal.classList.contains("show")){
+    closeLogo();
+  }
+});
+
+
+
 </script>
 
 </body>
