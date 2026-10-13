@@ -1,59 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hi">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#075b9f">
-<title>हमारी सुविधाएँ | Online Cyber Cafe, Muzaffarpur</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>हमारी सुविधाएँ | ONLINE CYBER CAFE, MUZAFFARPUR</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f3f7fb;color:#233f55;line-height:1.6}
-.hero{background:linear-gradient(135deg,#075b9f,#123b5d);color:#fff;text-align:center;padding:25px 12px}
-.hero h1{font-size:clamp(16px,4vw,27px);font-weight:700;letter-spacing:.1px;margin:0;white-space:nowrap}
-.container{width:min(100% - 24px,1000px);margin:0 auto;padding:18px 0 26px}
-.back{display:inline-block;color:#075b9f;text-decoration:none;font-weight:700;margin:0 0 14px}
-.services-intro{text-align:center;background:#fff;border:1px solid #dce9f4;border-radius:14px;padding:18px 14px;margin-bottom:16px;box-shadow:0 3px 12px rgba(24,55,91,.05)}
-.services-intro h2{color:#075b9f;font-size:25px;margin:0 0 5px}
-.services-intro p{margin:0;color:#5b6878;font-size:14px}
-.services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.services-category{background:#fff;border:1px solid #dce9f4;border-radius:14px;padding:17px;box-shadow:0 3px 12px rgba(24,55,91,.05)}
-.services-category h3{margin:0 0 10px;color:#075b9f;font-size:18px;border-bottom:2px solid #eaf3fb;padding-bottom:7px}
-.service-item{background:linear-gradient(135deg,#f5faff,#eaf3fb);border:1px solid #dce9f4;border-radius:12px;padding:10px 11px;font-size:14px;line-height:1.45;font-weight:700;color:#233f55;display:flex;gap:8px;align-items:flex-start;overflow-wrap:anywhere;margin:7px 0}
-.service-item:before{content:'✓';color:#07815c;font-weight:900;flex-shrink:0}
-.service-note{background:#fff8e6;border:1px solid #f4dfa5;border-radius:14px;padding:15px;margin:16px 0;line-height:1.6;font-size:14px;color:#5b4617;text-align:center}
-.services-contact{background:linear-gradient(135deg,#087b58,#075d49);color:#fff;text-align:center;padding:22px 16px;border-radius:18px;margin:18px 0}
-.services-contact h3{margin:0 0 9px;font-size:22px}
-.services-contact p{margin:7px 0;line-height:1.55;font-size:15px}
-.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:14px}
-.btn{display:inline-block;background:#fff;color:#075d49;text-decoration:none;font-weight:800;padding:11px 16px;border-radius:9px;font-size:14px}
-.btn.group{background:#ffe08a;color:#17324a}
-footer{background:#102d50;color:#fff;text-align:center;padding:20px 12px;margin-top:4px}
-footer p{margin:5px 0}footer a{color:#fff}footer .small{font-size:14px;color:#d8e7fa}
-body{-webkit-user-select:none;user-select:none}img{-webkit-user-drag:none;user-drag:none}
-@media(max-width:520px){.hero{padding:22px 7px}.hero h1{font-size:clamp(10px,4vw,18px);letter-spacing:-.5px}.services-grid{grid-template-columns:1fr}.services-category{padding:15px}.services-intro h2{font-size:22px}.service-item{font-size:14px}}
+body{margin:0;background:#eef4fa;color:#171717;font-family:Arial,Helvetica,sans-serif}
+.hero{padding:28px 10px;text-align:center;color:#fff;background:linear-gradient(135deg,#075b9f,#123b5d)}
+.hero h1{margin:0;font-size:clamp(16px,4.5vw,30px);white-space:nowrap}
+.services-page{width:min(760px,calc(100% - 22px));margin:22px auto}
+.category{background:white;border-radius:16px;padding:18px;margin-bottom:16px;box-shadow:0 5px 18px #1e46601a}
+h2{text-align:center}
+h3{color:#075b9f}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.item{background:#eef6fc;border-radius:10px;padding:12px;font-size:14px;font-weight:bold}
+.item:before{content:"✓ ";color:#07815c}
+.contact{background:#087b58;color:white;text-align:center;padding:22px 16px;border-radius:18px}
+.contact a{display:inline-block;background:white;color:#075d49;padding:11px 18px;border-radius:25px;text-decoration:none;font-weight:bold}
+.back{display:block;text-align:center;margin:20px;background:white;padding:12px;border-radius:25px;text-decoration:none}
+@media(max-width:420px){.grid{grid-template-columns:1fr}.hero h1{font-size:clamp(15px,4.2vw,19px)}}
 </style>
 </head>
 <body>
 <header class="hero"><h1>ONLINE CYBER CAFE, MUZAFFARPUR</h1></header>
-<main class="container">
-<a class="back" href="https://gov-exam-results.github.io/">← मुख्य वेबसाइट पर वापस जाएँ</a>
-<section class="services-intro"><h2>हमारी सुविधाएँ</h2><p>ऑनलाइन आवेदन, दस्तावेज़ और छात्र-छात्राओं से जुड़े कार्यों के लिए संपर्क करें।</p></section>
-<section class="services-grid" aria-label="ऑनलाइन सेवाओं की सूची">
-<article class="services-category"><h3>कॉलेज एवं यूनिवर्सिटी</h3><div class="service-item">L.S. College सहित कॉलेज/यूनिवर्सिटी से जुड़े ऑनलाइन कार्य</div><div class="service-item">Admission और Exam Challan</div><div class="service-item">Exam Form भरना</div><div class="service-item">TC, CLC/CLS और Character Certificate संबंधी आवेदन</div><div class="service-item">नोटिस एवं परीक्षा अपडेट</div></article>
-<article class="services-category"><h3>सरकारी प्रमाण-पत्र</h3><div class="service-item">जाति प्रमाण-पत्र</div><div class="service-item">आय प्रमाण-पत्र</div><div class="service-item">निवास प्रमाण-पत्र</div><div class="service-item">EWS प्रमाण-पत्र</div><div class="service-item">OBC-NCL प्रमाण-पत्र</div></article>
-<article class="services-category"><h3>PAN और Voter ID</h3><div class="service-item">नया PAN Card आवेदन</div><div class="service-item">PAN Card में Correction</div><div class="service-item">नया Voter ID आवेदन</div><div class="service-item">Voter ID में Correction</div></article>
-<article class="services-category"><h3>आधार एवं अन्य दस्तावेज़</h3><div class="service-item">Aadhaar PVC Card</div><div class="service-item">आधार में Address Change</div><div class="service-item">आधार दस्तावेज़ अपडेट संबंधी कार्य</div><div class="service-item">APAAR Card</div></article>
-<article class="services-category"><h3>सरकारी नौकरी एवं छात्रवृत्ति</h3><div class="service-item">सरकारी नौकरी के ऑनलाइन फॉर्म</div><div class="service-item">Scholarship आवेदन</div><div class="service-item">सरकारी भर्ती और परीक्षा से जुड़ी जानकारी</div></article>
-<article class="services-category"><h3>बैंक एवं DBT सेवा</h3><div class="service-item">NPCI / DBT Aadhaar Seeding संबंधी सहायता</div><div class="service-item">बैंक खाते में सरकारी लाभ प्राप्त करने से जुड़ी जानकारी</div></article>
+<main class="services-page">
+<section class="category">
+<h2>हमारी सुविधाएँ</h2>
+<p>कॉलेज, यूनिवर्सिटी और सरकारी सेवाओं से जुड़े ऑनलाइन काम करवाएँ।</p>
 </section>
-<section class="service-note"><strong>घर बैठे दस्तावेज़ भेजें</strong><br>अपने दस्तावेज़ WhatsApp पर भेजें। आवेदन/दस्तावेज़ की PDF और उपलब्ध रसीद WhatsApp पर प्राप्त करें।<br><strong>9279060820 (Only WhatsApp)</strong></section>
-<section class="services-contact"><h3>संपर्क करें</h3><p>ONLINE CYBER CAFE, MUZAFFARPUR</p><p><strong>मोबाइल: 9279060820 (Only WhatsApp)</strong></p><div class="actions"><a class="btn" href="https://wa.me/919279060820" target="_blank" rel="noopener noreferrer">WhatsApp पर संपर्क करें</a><a class="btn group" href="https://chat.whatsapp.com/DZUj04sysy3IVJqgN9yn0g" target="_blank" rel="noopener noreferrer">WhatsApp Group Join करें</a></div><p>सरकारी नौकरी की Notifications और Updates के लिए WhatsApp Group से जुड़ें।</p></section>
+<section class="category">
+<h3>कॉलेज एवं यूनिवर्सिटी सेवाएँ</h3>
+<div class="grid">
+<div class="item">L. S. College और अन्य कॉलेजों के नोटिस</div>
+<div class="item">Admission Challan</div>
+<div class="item">Exam Challan</div>
+<div class="item">Exam Form Fill-up</div>
+<div class="item">L. S. College Challan</div>
+<div class="item">सभी कॉलेजों का चालान</div>
+<div class="item">TC / CLS के लिए आवेदन</div>
+<div class="item">Character Certificate</div>
+</div>
+</section>
+<section class="category">
+<h3>प्रमाणपत्र एवं आरक्षण सेवाएँ</h3>
+<div class="grid">
+<div class="item">जाति प्रमाणपत्र</div>
+<div class="item">आवासीय / निवास प्रमाणपत्र</div>
+<div class="item">आय प्रमाणपत्र</div>
+<div class="item">EWS प्रमाणपत्र</div>
+<div class="item">OBC (NCL) प्रमाणपत्र</div>
+</div>
+</section>
+<section class="category">
+<h3>पहचान पत्र एवं आधार सेवाएँ</h3>
+<div class="grid">
+<div class="item">PAN Card बनवाना</div>
+<div class="item">PAN Card में सुधार</div>
+<div class="item">Voter ID Card</div>
+<div class="item">Voter ID Card में सुधार</div>
+<div class="item">APAAR Card</div>
+<div class="item">Aadhaar PVC Card ऑर्डर</div>
+<div class="item">Aadhaar Address Change — सिर्फ 1 दिन के अंदर</div>
+<div class="item">Aadhaar Documents Update</div>
+</div>
+</section>
+<section class="category">
+<h3>सरकारी फॉर्म एवं छात्रवृत्ति</h3>
+<div class="grid">
+<div class="item">सभी सरकारी नौकरी के फॉर्म</div>
+<div class="item">NSP Scholarship</div>
+<div class="item">मुख्यमंत्री कन्या उत्थान योजना</div>
+<div class="item">अन्य छात्रवृत्ति आवेदन</div>
+<div class="item">NPCI / DBT बैंक सीडिंग</div>
+</div>
+</section>
+<section class="category">
+<strong>अपडेट:</strong> WhatsApp ग्रुप में सरकारी नौकरी के नोटिफिकेशन और अपडेट मिलेंगे।
+</section>
+<section class="contact">
+<h2>घर बैठे आवेदन करवाएँ</h2>
+<p>WhatsApp पर दस्तावेज़ भेजें और आवेदन की Receiving / PDF प्राप्त करें।</p>
+<p><strong>9279060820 (Only WhatsApp)</strong></p>
+<a href="https://wa.me/919279060820" target="_blank" rel="noopener noreferrer">WhatsApp पर संपर्क करें</a>
+<p>घर बैठे ही ऑनलाइन काम करवाएँ।</p>
+</section>
+<a class="back" href="index.html">← मुख्य पेज पर वापस जाएँ</a>
 </main>
-<footer><p><strong>ONLINE CYBER CAFE, MUZAFFARPUR</strong></p><p>मोबाइल: <a href="https://wa.me/919279060820" target="_blank" rel="noopener noreferrer">9279060820 (Only WhatsApp)</a></p><p class="small">Developed by AAYUSH KUMAR</p><p><a href="https://gov-exam-results.github.io/">मुख्य वेबसाइट</a></p></footer>
+
+<!-- Basic anti-copy deterrents only; these cannot prevent screenshots or determined copying. -->
 <script>
-document.addEventListener('contextmenu',e=>e.preventDefault());
-document.addEventListener('copy',e=>e.preventDefault());
-document.addEventListener('cut',e=>e.preventDefault());
-document.addEventListener('keydown',e=>{const k=(e.key||'').toLowerCase();if((e.ctrlKey||e.metaKey)&&['c','x','u','s','a'].includes(k))e.preventDefault()});
+(function () {
+  "use strict";
+  document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+  });
+  document.addEventListener("copy", function (event) {
+    event.preventDefault();
+  });
+  document.addEventListener("cut", function (event) {
+    event.preventDefault();
+  });
+  document.addEventListener("keydown", function (event) {
+    const key = (event.key || "").toLowerCase();
+    if ((event.ctrlKey || event.metaKey) && ["c", "x", "u", "s", "a"].includes(key)) {
+      event.preventDefault();
+    }
+  });
+  document.addEventListener("selectstart", function (event) {
+    event.preventDefault();
+  });
+})();
 </script>
-</body></html>
+</body>
+</html>
