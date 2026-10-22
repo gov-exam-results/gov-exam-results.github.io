@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gov-exam-results.github.io/sitemap.xml
