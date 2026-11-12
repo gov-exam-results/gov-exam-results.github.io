@@ -308,6 +308,20 @@ select:focus{
 .services-nav-wrap{background:linear-gradient(135deg,#075b9f,#123b5d);text-align:center;padding:0 12px 18px;margin-top:-1px}
 .services-nav{display:inline-block;text-decoration:none;background:linear-gradient(135deg,#ffe08a,#ffbf47);color:#17324a;font-weight:800;font-size:14px;padding:10px 20px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.55)}
 .services-nav:active{transform:scale(.98)}
+/* Gentle glowing pulse to draw attention to the Services button */
+.services-nav{animation:servicesGlow 1.8s ease-in-out infinite}
+@keyframes servicesGlow{
+  0%,100%{box-shadow:0 4px 12px rgba(0,0,0,.18),0 0 0 0 rgba(255,211,93,.35)}
+  50%{box-shadow:0 4px 14px rgba(0,0,0,.22),0 0 0 6px rgba(255,211,93,.28),0 0 18px rgba(255,211,93,.55)}
+}
+@media(prefers-reduced-motion:reduce){.services-nav{animation:none}}
+.student-whatsapp-update{margin:12px 0 18px;text-align:center;padding:0 10px;line-height:1.55}
+.student-whatsapp-update a{ text-decoration:none }
+.student-whatsapp-description{display:block;color:#176b3a;font-size:13px;font-weight:700;margin:0 auto 7px;max-width:620px}
+.student-whatsapp-direct-label{font-size:12px;color:#555;margin:3px 0}
+.student-whatsapp-url{display:block;color:#0874bd;font-size:11px;overflow-wrap:anywhere;text-decoration:underline!important;margin:0 auto 8px;max-width:620px}
+.student-whatsapp-button{display:inline-block;color:#fff!important;background:#168b45;border:1px solid #11743a;border-radius:7px;padding:7px 17px;font-size:13px;font-weight:700;box-shadow:0 2px 7px rgba(0,0,0,.12)}
+.student-whatsapp-update a:active{opacity:.8}
 
 
 /* Telegram cards on both sides of the logo */
@@ -379,11 +393,18 @@ img {
 <div class="latest-results-wrap"><marquee class="latest-results-marquee" behavior="scroll" direction="left" scrollamount="4" onmouseover="this.stop();" onmouseout="this.start();"><a class="latest-results-link" href="index.html" aria-label="नए आए हुए Result देखने के लिए मुख्य पेज खोलें">🆕 नए आए हुए Result देखने के लिए यहां क्लिक करें ↗</a></marquee></div>
 
 <main class="container cyber-post" id="latestResult">
-<section class="card gds-heading-card"><h2>🔥 BRABU 2023-26 BCA 6th Semester Result Out</h2></section>
-<section class="card gds-result-card"><h2>BRABU 2023-26 BCA 6th Semester Result Out</h2>
-<p style="font-size:16px;line-height:1.6;margin:0 0 16px;text-align:center;">BRABU BCA 6th Semester (2023-26) का Result देखने के लिए नीचे दिए गए लिंक पर क्लिक करें।</p>
-<a class="gds-result-link" href="https://result.braburesults.com/result-view" target="_blank" rel="noopener noreferrer">BCA 6th Semester Result ↗</a></section>
+<section class="card gds-heading-card"><h2>🔥 BRABU 2024-28 UG 3rd Semester Result Out</h2></section>
+<section class="card gds-result-card"><h2>BRABU 2024-28 UG 3rd Semester Result Out</h2>
+<p style="font-size:16px;line-height:1.6;margin:0 0 16px;text-align:center;">BRABU UG 3rd Semester (2024-28) का Result देखने के लिए नीचे दिए गए लिंक पर क्लिक करें।</p>
+<a class="gds-result-link" href="https://result.braburesults.com/result-view" target="_blank" rel="noopener noreferrer">UG 3rd Semester Result ↗</a></section>
+<div class="student-whatsapp-update">
+  <a class="student-whatsapp-description" href="https://chat.whatsapp.com/LlQAmV3gZtt1NVVmutrwJW?s=cl&amp;p=a&amp;iam=2" target="_blank" rel="noopener noreferrer">2024-28 वाले विद्यार्थी लेटेस्ट अपडेट और कॉलेज की हर जानकारी पाने के लिए हमारा WhatsApp Group जॉइन करें।</a>
+  <div class="student-whatsapp-direct-label">WhatsApp Group का सीधा लिंक:</div>
+  <a class="student-whatsapp-url" href="https://chat.whatsapp.com/LlQAmV3gZtt1NVVmutrwJW?s=cl&amp;p=a&amp;iam=2" target="_blank" rel="noopener noreferrer">https://chat.whatsapp.com/LlQAmV3gZtt1NVVmutrwJW?s=cl&amp;p=a&amp;iam=2</a>
+  <a class="student-whatsapp-button" href="https://chat.whatsapp.com/LlQAmV3gZtt1NVVmutrwJW?s=cl&amp;p=a&amp;iam=2" target="_blank" rel="noopener noreferrer">यहाँ क्लिक करें ↗</a>
+</div>
 <section class="card gds-link-card" id="otherResults"><h2>📚 Other Results</h2><div id="otherResultsList">
+<a class="other-result-text-link" href="https://result.braburesults.com/result-view" target="_blank" rel="noopener noreferrer">BRABU 2023-26 BCA 6th Semester Result ↗</a>
 <a class="other-result-text-link" href="ssc-gd-constable-exam-2026-result.html">SSC GD Constable Exam 2026 Result ↗</a>
 <a class="other-result-text-link" href="rrb-alp-cbat-exam-city-2026.html">RRB ALP CBAT Exam City Details 2026 ↗</a>
 <a class="other-result-text-link" href="stet-2026-admit-card.html">STET 2026 Admit Card ↗</a>
